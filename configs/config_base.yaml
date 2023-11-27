@@ -1,0 +1,41 @@
+# task
+binary_data_dir: ''
+work_dir: '' # experiment directory.
+infer: false # infer
+seed: 42
+debug: false
+save_codes: #### no use
+  - configs
+  - models
+  - tasks
+  - utils
+
+#############
+# dataset
+#############
+ds_workers: 1 #### no use
+endless: false #### no use
+
+#########
+# train and eval
+#########
+print_nan_grads: false #### no use
+load_ckpt: ''
+save_best: true #### no use
+num_ckpt_keep: 100 # keep 100 ckpt
+clip_grad_norm: 0 #### no use
+accumulate_grad_batches: 1  #### no use
+tb_log_interval: 100 #### no use
+num_sanity_val_steps: 5  # steps of validation at the beginning
+check_val_every_n_epoch: 10 #### no use
+val_check_interval: 4000 # every iter to save
+valid_monitor_key: 'val_loss' #### no use
+valid_monitor_mode: 'min' #### no use
+max_epochs: 1000 #### no use
+max_updates: 600000 # iter numbers
+amp: false #### no use
+batch_size: 32
+eval_batch_size: 32
+num_workers: 2 #8
+test_input_dir: '' #### no use
+resume_from_checkpoint: 0 #### no use

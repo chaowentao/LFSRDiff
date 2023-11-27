@@ -1,0 +1,27 @@
+base_config:
+  - ./diffsr_base.yaml
+  - ./lfsr4x.yaml
+trainer_cls: tasks.srdiff_lfsr.SRDiffLFSR
+
+val_check_interval: 10000
+enc_num_feat: 32
+hidden_size: 32
+
+# model
+unet_dim_mults: 1|2|3|4
+decay_steps: 100000
+use_distgunet: false # true
+
+# train and test
+
+batch_size: 4
+max_updates: 400000
+
+### test setting
+test_save_png: true
+save_intermediate: false 
+gen_dir_name: '4X'
+
+enc_fn: "epit"
+enc_ckpt: checkpoints/epit_y_lfsr4x_c32_bs4
+fix_enc: true

@@ -1,0 +1,11 @@
+binary_data_dir: data/binary/lfsr4x
+patch_size: 640 # 5x4x32=64
+crop_size: 640
+thresh_size: 0
+test_crop_size: [ 8000, 8000 ]
+test_thresh_size: 0
+valid_steps: 4
+num_sanity_val_steps: 4
+eval_batch_size: 1
+test_batch_size: 1
+sr_scale: 2

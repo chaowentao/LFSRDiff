@@ -1,0 +1,19 @@
+base_config:
+  - ../sr_base.yaml
+  - ../lfsr4x.yaml
+trainer_cls: tasks.epit.EPITLFSRTask
+# model
+hidden_size: 32 # 64
+lr: 0.0002
+# num_block: 17
+
+# train and eval
+max_updates: 200000
+batch_size: 4 # 64 2
+eval_batch_size: 1
+valid_steps: 4
+
+### test setting
+test_save_png: true
+save_intermediate: false 
+gen_dir_name: '4X'
