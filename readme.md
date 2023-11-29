@@ -1,6 +1,8 @@
 This repository contains the implementation of the following paper:
 
   LFSRDiff: Light Field Image Super-Resolution via Diffusion Models
+  
+  [paper link](http://arxiv.org/abs/2311.16517)
 
 # Get Started
 
@@ -58,3 +60,7 @@ python tasks/trainer.py --config configs/diffsr_pre_epit_distgunet_lfsr4x.yaml -
 python test_lfsrdiff_metrics_plus.py
 ```
 
+### Acknowledgements
+This code borrows heavily from [SRDiff](https://github.com/LeiaLi/SRDiff) and [BasicLFSR](https://github.com/ZhengyuLiang24/BasicLFSR) repository. Thanks a lot.
+
+If you have any questions, please pull a `Issues` and feel free to contact me ``chaowentao@mail.bnu.edu.cn`` or ``chaowentao@gmail.com``.
