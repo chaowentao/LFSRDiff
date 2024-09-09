@@ -2,7 +2,7 @@ This repository contains the implementation of the following paper:
 
   LFSRDiff: Light Field Image Super-Resolution via Diffusion Models
   
-  [paper link](http://arxiv.org/abs/2311.16517)
+ <!-- [paper link](http://arxiv.org/abs/2311.16517) --> 
 
 # Get Started
 
